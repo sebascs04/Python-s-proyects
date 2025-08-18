@@ -101,7 +101,7 @@ def opxion4():
 def opxion5():
     ruta_base = Path('C:/Users/SEBASTIAN/Desktop/Recetas')
     conjunto_categorias = [cat.name for cat in ruta_base.iterdir() if cat.is_dir()]
-    nombre_categoria = input("¿Qué categoría nueva quiere eliminar? ")
+    nombre_categoria = input("¿Qué categoría quiere eliminar? ")
 
     while nombre_categoria not in conjunto_categorias:
         nombre_categoria = input("Esa categoría no existe para ser eliminada, vuelva a ingresar otro nombre: ")
